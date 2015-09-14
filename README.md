@@ -19,5 +19,3 @@ alias legacybehat='/var/www/vendor/bin/behat --config=/var/www/tests/behat/behat
 ```
 
 So, all you need to run is: `legacybehat`
-
-
