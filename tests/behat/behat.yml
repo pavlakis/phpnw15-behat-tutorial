@@ -1,0 +1,20 @@
+default:
+  autoload:
+    '': %paths.base%/features/bootstrap/
+
+  extensions:
+
+    Behat\MinkExtension:
+      browser_name: phantomjs
+      javascript_session: selenium2
+      base_url: http://test.legacy.com/
+
+      sessions:
+        my_session:
+          goutte:
+            guzzle_parameters:
+              verify: false
+
+      selenium2:
+        wd_host: "http://localhost:8643/wd/hub"
+        capabilities: { "browser": "phantomjs" }
