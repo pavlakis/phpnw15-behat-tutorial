@@ -22,14 +22,4 @@ class FeatureContext extends MinkContext implements SnippetAcceptingContext
     public function __construct()
     {
     }
-
-    /**
-     * @BeforeSuite
-     */
-    public static function prepare(BeforeSuiteScope $scope)
-    {
-        // prepare system for test suite
-        // before it runs
-        shell_exec("sh /var/www/scripts/db.sh clean");
-    }
 }
