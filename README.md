@@ -6,7 +6,7 @@
 
 (1) Clone repo
 
-(2) Run `vagrant up`
+(2) Run `vagrant plugin install vagrant-hostmanager && vagrant up`
 
 (3) Add the following to your hosts file: `192.168.42.200 dev.legacy.com test.legacy.com`
 
